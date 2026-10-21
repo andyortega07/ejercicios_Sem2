@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.5; color: #182536; background: #f3f5f7; }
+main { width: min(94%, 680px); margin: 28px auto; padding: 26px 30px; background: white; border: 1px solid #d7dee5; border-radius: 9px; }
+h1 { font-size: 27px; line-height: 1.2; margin: 10px 0 12px; }
+h2 { font-size: 20px; margin: 0 0 10px; }
+a { color: #174f83; }
+.actividad { margin-bottom: 8px; color: #526477; font-size: 13px; font-weight: bold; letter-spacing: 1px; }
+.descripcion, .nota { color: #526477; }
+.nota { font-size: 13px; margin-bottom: 0; }
+label { display: block; font-weight: bold; margin: 12px 0 5px; }
+input, select { width: 100%; border: 1px solid #9ba9b8; border-radius: 5px; padding: 10px 12px; font: inherit; background: white; color: #182536; }
+input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid #9fc6ef; outline-offset: 3px; }
+.acciones { display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0 14px; }
+button { font: inherit; font-weight: bold; padding: 9px 17px; border: 1px solid #174f83; border-radius: 5px; background: #174f83; color: white; cursor: pointer; }
+button[type="reset"] { background: white; color: #174f83; }
+.error { color: #9c2020; min-height: 1.5em; margin: 0 0 10px; }
+.resultado { border-left: 4px solid #174f83; background: #f0f6fb; padding: 15px; overflow-x: auto; }
+#resultado { white-space: pre-line; }
+table { width: 100%; border-collapse: collapse; background: white; }
+caption { font-weight: bold; text-align: left; padding: 0 0 8px; }
+th, td { padding: 7px 10px; border: 1px solid #c3d1df; text-align: left; }
+th { background: #e4edf5; }
+li { margin: 14px 0; }
+@media(max-width: 480px) { main { padding: 20px; margin: 16px auto; } h1 { font-size: 24px; } }

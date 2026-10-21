@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de multiplicar</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <a href="../index.html">Volver a los ejercicios</a>
+    <p class="actividad">EJERCICIO 2 · for</p>
+    <h1>Tabla de multiplicar</h1>
+    <p class="descripcion">Ingresa el número y el límite de la tabla, entre 1 y 20.</p>
+    <form id="formulario" novalidate>
+      <label for="numero">Número de la tabla</label>
+      <input id="numero" name="numero" type="number" step="any" required>
+      <label for="hasta">Multiplicar hasta</label>
+      <input id="hasta" name="hasta" type="number" min="1" max="20" step="1" required>
+      <div class="acciones">
+        <button type="submit">Calcular</button>
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+    <p id="error" class="error" role="alert"></p>
+    <section class="resultado" aria-labelledby="titulo-resultado" aria-live="polite">
+      <h2 id="titulo-resultado">Resultado</h2>
+      <div id="resultado">Completa el formulario y pulsa Calcular.</div>
+    </section>
+    <p class="nota">Se permite un número positivo, negativo o cero. El límite debe ser un entero entre 1 y 20.</p>
+  </main>
+</body>
+</html>

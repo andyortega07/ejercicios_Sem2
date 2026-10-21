@@ -1,0 +1,546 @@
+{
+  "metodo": "Ejecución de los app.js originales con Node.js y un entorno DOM mínimo. No es una prueba visual en navegador ni certifica su consola.",
+  "total": 78,
+  "resultados": [
+    {
+      "prueba": "clasificarNota(-1)",
+      "obtenido": "Nota no válida",
+      "esperado": "Nota no válida",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(0)",
+      "obtenido": "Reprobado",
+      "esperado": "Reprobado",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(4.99)",
+      "obtenido": "Reprobado",
+      "esperado": "Reprobado",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(5)",
+      "obtenido": "En recuperación",
+      "esperado": "En recuperación",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(6.99)",
+      "obtenido": "En recuperación",
+      "esperado": "En recuperación",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(7)",
+      "obtenido": "Aprobado",
+      "esperado": "Aprobado",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(8.99)",
+      "obtenido": "Aprobado",
+      "esperado": "Aprobado",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(9)",
+      "obtenido": "Excelente",
+      "esperado": "Excelente",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(10)",
+      "obtenido": "Excelente",
+      "esperado": "Excelente",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(10.01)",
+      "obtenido": "Nota no válida",
+      "esperado": "Nota no válida",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(NaN)",
+      "obtenido": "Nota no válida",
+      "esperado": "Nota no válida",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota(Infinity)",
+      "obtenido": "Nota no válida",
+      "esperado": "Nota no válida",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario de nota con 7",
+      "obtenido": "Aprobado",
+      "esperado": "Aprobado",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario de nota vacío",
+      "obtenido": "Ingresa una nota.",
+      "esperado": "Ingresa una nota.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Tabla de 7 hasta 10 tiene 10 filas",
+      "obtenido": 10,
+      "esperado": 10,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Primera fila de tabla de 7",
+      "obtenido": [
+        "7 × 1",
+        "7"
+      ],
+      "esperado": [
+        "7 × 1",
+        "7"
+      ],
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Última fila de tabla de 7",
+      "obtenido": [
+        "7 × 10",
+        "70"
+      ],
+      "esperado": [
+        "7 × 10",
+        "70"
+      ],
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Límite máximo de 20 filas",
+      "obtenido": 20,
+      "esperado": 20,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Rechazo del límite 0",
+      "obtenido": "El límite debe ser un entero entre 1 y 20.",
+      "esperado": "El límite debe ser un entero entre 1 y 20.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Rechazo del límite 21",
+      "obtenido": "El límite debe ser un entero entre 1 y 20.",
+      "esperado": "El límite debe ser un entero entre 1 y 20.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Rechazo del límite 2.5",
+      "obtenido": "El límite debe ser un entero entre 1 y 20.",
+      "esperado": "El límite debe ser un entero entre 1 y 20.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Rechazo del límite NaN",
+      "obtenido": "El límite debe ser un entero entre 1 y 20.",
+      "esperado": "El límite debe ser un entero entre 1 y 20.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Tabla con límite 1",
+      "obtenido": [
+        [
+          "7 × 1",
+          "7"
+        ]
+      ],
+      "esperado": [
+        [
+          "7 × 1",
+          "7"
+        ]
+      ],
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Tabla de número negativo",
+      "obtenido": [
+        "-2 × 3",
+        "-6"
+      ],
+      "esperado": [
+        "-2 × 3",
+        "-6"
+      ],
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Tabla del cero",
+      "obtenido": [
+        "0 × 2",
+        "0"
+      ],
+      "esperado": [
+        "0 × 2",
+        "0"
+      ],
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Producto decimal sin residuo visible",
+      "obtenido": [
+        "0.1 × 3",
+        "0.3"
+      ],
+      "esperado": [
+        "0.1 × 3",
+        "0.3"
+      ],
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Número no finito",
+      "obtenido": "Ingresa un número válido.",
+      "esperado": "Ingresa un número válido.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario genera tabla HTML",
+      "obtenido": 10,
+      "esperado": 10,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario rechaza 21",
+      "obtenido": "El límite debe ser un entero entre 1 y 20.",
+      "esperado": "El límite debe ser un entero entre 1 y 20.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Una tabla previa se elimina al rechazar un límite",
+      "obtenido": "",
+      "esperado": "",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario de tabla vacío",
+      "obtenido": "Completa el número y el límite de la tabla.",
+      "esperado": "Completa el número y el límite de la tabla.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "operar(12,4,+)",
+      "obtenido": 16,
+      "esperado": 16,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "operar(12,4,-)",
+      "obtenido": 8,
+      "esperado": 8,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "operar(12,4,*)",
+      "obtenido": 48,
+      "esperado": 48,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "operar(12,4,/)",
+      "obtenido": 3,
+      "esperado": 3,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "División entre cero",
+      "obtenido": "No se puede dividir para 0",
+      "esperado": "No se puede dividir para 0",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Operador no permitido",
+      "obtenido": "Operador no válido",
+      "esperado": "Operador no válido",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Argumento no numérico",
+      "obtenido": "Ingresa dos números válidos.",
+      "esperado": "Ingresa dos números válidos.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Resultado fuera de rango",
+      "obtenido": "El resultado está fuera del rango permitido.",
+      "esperado": "El resultado está fuera del rango permitido.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario muestra resultado con dos decimales",
+      "obtenido": "3.00",
+      "esperado": "3.00",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario muestra aviso de división entre cero",
+      "obtenido": "No se puede dividir para 0",
+      "esperado": "No se puede dividir para 0",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario de calculadora vacío",
+      "obtenido": "Completa los dos números.",
+      "esperado": "Completa los dos números.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(0)",
+      "obtenido": 0,
+      "esperado": 0,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(1)",
+      "obtenido": 1,
+      "esperado": 1,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(40)",
+      "obtenido": 1,
+      "esperado": 1,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(60)",
+      "obtenido": 1,
+      "esperado": 1,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(61)",
+      "obtenido": 1.5,
+      "esperado": 1.5,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(75)",
+      "obtenido": 1.5,
+      "esperado": 1.5,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(300)",
+      "obtenido": 3,
+      "esperado": 3,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(480)",
+      "obtenido": 4.5,
+      "esperado": 4.5,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(481)",
+      "obtenido": 5,
+      "esperado": 5,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(720)",
+      "obtenido": 5,
+      "esperado": 5,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(1440)",
+      "obtenido": 5,
+      "esperado": 5,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(1441)",
+      "obtenido": 6,
+      "esperado": 6,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa(2880)",
+      "obtenido": 10,
+      "esperado": 10,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "horasACobrar(40)",
+      "obtenido": 1,
+      "esperado": 1,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "horasACobrar(75)",
+      "obtenido": 2,
+      "esperado": 2,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "horasACobrar(300)",
+      "obtenido": 5,
+      "esperado": 5,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "horasACobrar(720)",
+      "obtenido": 12,
+      "esperado": 12,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Rechazo de tiempo negativo",
+      "obtenido": "Ingresa una cantidad de minutos igual o mayor que cero.",
+      "esperado": "Ingresa una cantidad de minutos igual o mayor que cero.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Rechazo de tiempo no finito",
+      "obtenido": "Ingresa una cantidad de minutos igual o mayor que cero.",
+      "esperado": "Ingresa una cantidad de minutos igual o mayor que cero.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario del parqueadero con 75 minutos",
+      "obtenido": "Horas a cobrar: 2\nTarifa: $1.50",
+      "esperado": "Horas a cobrar: 2\nTarifa: $1.50",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Formulario del parqueadero vacío",
+      "obtenido": "Ingresa el tiempo de estacionamiento.",
+      "esperado": "Ingresa el tiempo de estacionamiento.",
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota no accede al DOM",
+      "obtenido": false,
+      "esperado": false,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "clasificarNota tiene parámetros y return",
+      "obtenido": true,
+      "esperado": true,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Limpiar restablece mensajes y resultados",
+      "obtenido": {
+        "resultado": "Completa el formulario y pulsa Calcular.",
+        "error": "",
+        "html": ""
+      },
+      "esperado": {
+        "resultado": "Completa el formulario y pulsa Calcular.",
+        "error": "",
+        "html": ""
+      },
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "generarTabla no accede al DOM",
+      "obtenido": false,
+      "esperado": false,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "generarTabla tiene parámetros y return",
+      "obtenido": true,
+      "esperado": true,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Limpiar restablece mensajes y resultados",
+      "obtenido": {
+        "resultado": "Completa el formulario y pulsa Calcular.",
+        "error": "",
+        "html": ""
+      },
+      "esperado": {
+        "resultado": "Completa el formulario y pulsa Calcular.",
+        "error": "",
+        "html": ""
+      },
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "operar no accede al DOM",
+      "obtenido": false,
+      "esperado": false,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "operar tiene parámetros y return",
+      "obtenido": true,
+      "esperado": true,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Limpiar restablece mensajes y resultados",
+      "obtenido": {
+        "resultado": "Completa el formulario y pulsa Calcular.",
+        "error": "",
+        "html": ""
+      },
+      "esperado": {
+        "resultado": "Completa el formulario y pulsa Calcular.",
+        "error": "",
+        "html": ""
+      },
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "horasACobrar no accede al DOM",
+      "obtenido": false,
+      "esperado": false,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "horasACobrar tiene parámetros y return",
+      "obtenido": true,
+      "esperado": true,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa no accede al DOM",
+      "obtenido": false,
+      "esperado": false,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "calcularTarifa tiene parámetros y return",
+      "obtenido": true,
+      "esperado": true,
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Limpiar restablece mensajes y resultados",
+      "obtenido": {
+        "resultado": "Completa el formulario y pulsa Calcular.",
+        "error": "",
+        "html": ""
+      },
+      "esperado": {
+        "resultado": "Completa el formulario y pulsa Calcular.",
+        "error": "",
+        "html": ""
+      },
+      "estado": "Correcto"
+    },
+    {
+      "prueba": "Reflexión de máximo ocho líneas",
+      "obtenido": true,
+      "esperado": true,
+      "estado": "Correcto"
+    }
+  ]
+}
